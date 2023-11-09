@@ -5,7 +5,7 @@ public class MethodOverloading {
         // method overloading
         // dapat di buat jika method tersebut memiliki nama yang sama, tetapi memiliki parameter berbeda
         // ataupun tipe parameter berbeda
-        
+
         sayHello("Nizar");
         sayHello(20);
         sayHello("Nizar" , "Fazari");
