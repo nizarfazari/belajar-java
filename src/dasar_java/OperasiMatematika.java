@@ -22,8 +22,6 @@ public class OperasiMatematika {
         System.out.println(c);
         // ! yaitu negasi sama dengan pada bahasa lainnya
         System.out.println(!true);
-
-        
     }
 
 }
