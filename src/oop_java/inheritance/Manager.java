@@ -4,8 +4,8 @@ public class Manager {
 
     String name;
 
-    void sayHello(){
-        System.out.println("Hello my name is" + name);
+    void sayHello(String name){
+        System.out.println( "Hi " + name + "Hello my name is Manager" + this.name);
     }
 }
 
