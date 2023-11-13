@@ -1,0 +1,9 @@
+
+Modifier    Class   Package     SubClass    World
+Public       Y         Y           Y          Y
+Protected    Y         Y           Y          N
+No Modifier  Y         Y           N          N
+Private      Y         N           N          N
+
+
+
