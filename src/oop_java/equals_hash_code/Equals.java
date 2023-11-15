@@ -1,4 +1,4 @@
-package oop_java.equals;
+package oop_java.equals_hash_code;
 
 public class Equals {
 
@@ -27,6 +27,8 @@ public class Equals {
 
         // default dari equals dari memory ( == )
         System.out.println(product.equals(product2));
+        // digunakan nanti saat di java collection
+        System.out.println(product.hashCode() == product2.hashCode());
     }
 
 
