@@ -28,5 +28,9 @@ public class ValidationApp {
             System.out.println("asdas");
         }
 
+        LoginRequest loginRequest2 = new LoginRequest(null,null);
+        // tidak akan error tapi kalo di jalankan appnya ttp mati => agar lebih clean drpd throwable
+        ValidationUtil.validateRuntime(loginRequest2);
+
     }
 }
