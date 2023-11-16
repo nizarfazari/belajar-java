@@ -1,5 +1,10 @@
 package oop_java.exception;
 
+
+import oop_java.reflection.NotBlanks;
+
+import java.lang.reflect.Field;
+
 public class ValidationUtil {
     public static void validate(LoginRequest loginRequest) throws ValidationException,NullPointerException {
         if (loginRequest.username == null) {
@@ -23,6 +28,31 @@ public class ValidationUtil {
             throw new NullPointerException("Password tidak boleh null");
         } else if (loginRequest.password.isBlank()) {
             throw new BlankException("Password tidak boleh kosong");
+        }
+    }
+
+    // Penggunaan Reflection
+    public static void validationReflections(Object object){
+        Class aClass = object.getClass();
+        // kalo get field dapat yang public saja sedangkan getDeclared dapat semua
+        Field[] fields = aClass.getDeclaredFields();
+
+        for (var field : fields){
+            // paksa jika access modifiernya private biar bisa di access
+            field.setAccessible(true);
+            if (field.getAnnotation(NotBlanks.class) != null){
+                // validate
+                try {
+                    // kalau menggunaakn throw di atas jadi saat memanggil harus ada try catch
+                    String value = (String) field.get(object);
+
+                    if (value == null || value.isBlank()){
+                        throw new BlankException("Field " + field.getName() + "is blank");
+                    }
+                } catch (IllegalAccessException e) {
+                    System.out.println("Tidak bisa mengakses field " + field.getName());
+                }
+            }
         }
     }
 }
