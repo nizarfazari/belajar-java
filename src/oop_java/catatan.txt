@@ -1,0 +1,11 @@
+Apa itu OOP
+bahasa pemrograman yang berkonsep pada objek
+
+Apa itu objek
+Objek adalah data yang berisikan field/properties dan method
+semua data primitif pada java adalah Objek
+
+Apa itu Class
+Class seperti blueprint untuk membuat sebuah objek
+Setiap objek di buat dari class
+Camel Case

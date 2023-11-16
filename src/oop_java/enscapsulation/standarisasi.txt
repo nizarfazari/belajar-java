@@ -1,0 +1,6 @@
+standar pada setter getter di enscapsulation
+
+Tipe data   Getter Method       SetterMethod
+Boolean         isXxx               setXxxx
+Primitif        getXxx              setXxxx
+Object          getXxx              setXxx
