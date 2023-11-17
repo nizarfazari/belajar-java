@@ -17,6 +17,11 @@ public class StringBuilderApp {
 
 
         // jadi lebih baik mennggunakan String Builder
+        // bisa juga menggunakan StringBuffer sama digunakan untuk memanipulasi String => bedanya di thread sage
+        // StringBuffer => Thread Safe
+        // StringBuilder => Thread Tidak Safe
+
+        
         StringBuilder builder = new StringBuilder();
         builder.append("Nizar");
         builder.append(" ");
