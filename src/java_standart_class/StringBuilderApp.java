@@ -21,7 +21,7 @@ public class StringBuilderApp {
         // StringBuffer => Thread Safe
         // StringBuilder => Thread Tidak Safe
 
-        
+
         StringBuilder builder = new StringBuilder();
         builder.append("Nizar");
         builder.append(" ");
