@@ -10,7 +10,7 @@ public class Base64App {
          System.out.println(encoded);
          byte[] bytes = Base64.getDecoder().decode(encoded);
          // untuk mengkonversi dalam bentuk String
-        
+
         String res = new String(bytes);
         System.out.println(res);
     }
