@@ -20,7 +20,7 @@ public class InvariantApp {
          doit(data);
 
     }
-    
+
 
     public static void doit(MyData<Object> myData){
         // do nothing
