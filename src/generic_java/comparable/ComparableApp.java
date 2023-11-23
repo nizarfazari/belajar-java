@@ -3,7 +3,7 @@ package generic_java.comparable;
 import java.util.Arrays;
 
 /*
-*  Perbadingan 2 Object
+*  Perbadingan 2  harus menggunakan implemtasi pada Object yang di buat
 */
 public class ComparableApp{
 
