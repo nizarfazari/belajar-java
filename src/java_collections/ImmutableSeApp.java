@@ -18,7 +18,7 @@ public class ImmutableSeApp {
 
         Set<String> immutable = Collections.unmodifiableSet(names);
         Set<String> set = Set.of("Nizar", "Fazari");
-        
+
 
     }
 }

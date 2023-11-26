@@ -14,6 +14,10 @@ public class Person {
         this.hobbies = new ArrayList<>();
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void addHobby(String hobby){
         hobbies.add(hobby);
     }
