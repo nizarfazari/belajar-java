@@ -22,7 +22,7 @@ public class ImmutableApp {
         mutable.add("Nizar");
         mutable.add("Fazari");
         List<String> elemets = List.of("Nizar", "Fazari", "Budi");
-        
+
 
 
     }
