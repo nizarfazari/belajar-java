@@ -6,6 +6,7 @@ import java.util.Queue;
 
 
 /*
+    FIFO first in first out
 *   ArrayDeque || LinkedList || PriorityQueue
 *   Array deque menggunakan array sebagai implementasinya
 *   LinkedList menggunakan double linked list sebgai implementasi queue
